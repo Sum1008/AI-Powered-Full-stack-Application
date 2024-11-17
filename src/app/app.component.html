@@ -1,0 +1,39 @@
+<!-- src/app/app.component.html -->
+<div class="tabs-container">
+  <div class="tabs">
+    <div class="tab" [class.active]="activeTab === 'generateImage'" (click)="activeTab = 'generateImage'">Generate Image</div>
+    <div class="tab" [class.active]="activeTab === 'askAI'" (click)="activeTab = 'askAI'">Ask AI</div>
+    <div class="tab" [class.active]="activeTab === 'recipeGenerator'" (click)="activeTab = 'recipeGenerator'">Recipe Generator</div>
+  </div>
+
+  <div class="tab-content">
+    <div *ngIf="activeTab === 'generateImage'">
+      <h2 class="tab-title">Generate Image</h2>
+      <input [(ngModel)]="imagePrompt" placeholder="Enter image prompt" class="input-field" />
+      <button (click)="generateImage()" class="btn">Generate Image</button>
+      <div *ngIf="generatedImageUrl">
+        <img [src]="generatedImageUrl" alt="Generated Image" class="generated-image" />
+      </div>
+    </div>
+
+    <div *ngIf="activeTab === 'askAI'">
+      <h2 class="tab-title">Ask AI</h2>
+      <input [(ngModel)]="aiPrompt" placeholder="Enter your question" class="input-field" />
+      <button (click)="askAI()" class="btn">Ask AI</button>
+      <div *ngIf="aiResponse">
+        <p>{{ aiResponse }}</p>
+      </div>
+    </div>
+
+    <div *ngIf="activeTab === 'recipeGenerator'">
+      <h2 class="tab-title">Recipe Generator</h2>
+      <input [(ngModel)]="recipeIngredients" placeholder="Enter ingredients" class="input-field" />
+      <input [(ngModel)]="recipeCuisine" placeholder="Enter cuisine" class="input-field" />
+      <input [(ngModel)]="dietaryRestriction" placeholder="Enter dietary restrictions" class="input-field" />
+      <button (click)="generateRecipe()" class="btn">Generate Recipe</button>
+      <div *ngIf="generatedRecipe">
+        <p>{{ generatedRecipe }}</p>
+      </div>
+    </div>
+  </div>
+</div>
