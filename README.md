@@ -1,27 +1,17 @@
-# ImageAiRecipeApp
+# SpringAI (AI Powered Full stack Application)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+## Project Overview
+SpringAI is a backend application built with **Spring Boot** that integrates with OpenAI APIs to provide AI-powered services, including text generation, image creation, and recipe generation. This project demonstrates the use of AI models to solve real-world problems efficiently.
 
-## Development server
+## Features
+1. **AI Text Generation**
+   - Accepts user prompts and generates human-like responses using OpenAI's GPT model.
+ 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. **AI Image Generation**
+   - Generates images based on user descriptions with customizable quality, size, and quantity.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. **AI-Powered Recipe Generator**
+   - Creates detailed recipes based on ingredients, cuisine preferences, and dietary restrictions.
+   
