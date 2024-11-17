@@ -2,6 +2,8 @@
 
 ## Project Overview
 SpringAI is a backend application built with **Spring Boot** that integrates with OpenAI APIs to provide AI-powered services, including text generation, image creation, and recipe generation. This project demonstrates the use of AI models to solve real-world problems efficiently.
+Designed and implemented a scalable backend application to provide AI-driven services: text generation, image creation, and recipe generation.
+Integrated OpenAI APIs for leveraging GPT-based text generation and DALL-E for dynamic image creation
 
 ## Features
 1. **AI Text Generation**
